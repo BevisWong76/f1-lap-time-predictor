@@ -1,3 +1,5 @@
 .venv
 f1_data_cache/
 f1_data_raw/*.csv
+models/*.pt
+temp.py

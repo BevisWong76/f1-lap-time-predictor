@@ -1,0 +1,15 @@
+ipykernel
+ipywidgets
+
+fastf1
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+torch
+optuna
+joblib
+
+streamlit
+gdown
