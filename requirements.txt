@@ -1,15 +1,18 @@
-ipykernel
-ipywidgets
+ipykernel==7.3.0
+ipywidgets==8.1.8
+fastf1==3.8.3
+numpy==2.5.2
+pandas==2.3.3
+matplotlib==3.11.1
+seaborn==0.13.2
+plotly==6.9.0
+scikit-learn==1.9.0
+torch==2.13.0
+optuna==4.9.0
+joblib==1.5.3
+streamlit==1.61.1
 
-fastf1
-numpy
-pandas
-matplotlib
-seaborn
-scikit-learn
-torch
-optuna
-joblib
 
-streamlit
-gdown
+
+
+
