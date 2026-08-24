@@ -90,7 +90,7 @@ def load_historical_data():
 @st.cache_data
 def load_metadata():
     try:
-        with open("results/model_metadata.json", "r") as f:
+        with open("src/model_metadata.json", "r") as f:
             return json.load(f)
     except FileNotFoundError:
         st.error("Metadata file not found.")
