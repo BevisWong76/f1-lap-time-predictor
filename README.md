@@ -125,11 +125,11 @@ The execution pipeline automatically generates and manages the following runtime
 ```text
 ├── f1_data_cache               # Data Cache for fastf1 API
 ├── f1_data_raw                 # raw data in CSV
-├── models/                     # Stores trained model weight and config
+├── models/                     # Stores trained model weights and config
 ├── results                     # Prediction and evaluation results
 └── plots/                      # Generated visualizations
-    ├── Base_Model              # Visualizations of evaluation of Base Model
-    ├── Best_Model              # Visualizations of evaluation of Best Model
+    ├── Base_Model              # Visualizations and evaluations for the Base Model
+    ├── Best_Model              # Visualizations and evaluations for the Best Model
     ├── EDA/                    # Exploratory Data Analysis plots
     ├── Preprocessing           # Visualizations of the preprocessed data
     └── Feature_Importance      # Feature importance visualizations
@@ -146,6 +146,9 @@ cd f1-lap-time-predictor
 ```
 
 You can then set up the project locally using either the standard Python `venv` or the ultra-fast `uv` package manager.
+
+> **Note on PyTorch & Hardware:** 
+> Running the Streamlit app uses CPU inference by default and requires no special setup. If you intend to re-train the models using GPU acceleration (CUDA / Apple Silicon MPS), please ensure you install the PyTorch build compatible with your specific hardware by following the official [PyTorch Installation Guide](https://pytorch.org/get-started/locally/).
 
 ### Option 1: Using Standard Python `venv` (Traditional)
 
@@ -199,7 +202,7 @@ uv venv
 source .venv/bin/activate
 ```
 
- 4. Install dependencies:
+4. Install dependencies:
 ```bash
 uv pip install --upgrade pip
 uv pip install -r requirements.txt
